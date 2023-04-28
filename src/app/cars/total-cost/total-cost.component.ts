@@ -6,7 +6,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./total-cost.component.less']
 })
 export class TotalCostComponent {
-  @Input()totalCost!: number;
+  @Input()
+  totalCost!: number;
   @Output() shownGross: EventEmitter<number> = new EventEmitter<number>();
   private VAT: number = 1.23;
 
