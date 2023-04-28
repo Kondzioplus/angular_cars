@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarsModule } from './cars/cars.module';
 import { CarsService } from './cars/cars.service';
+import { HeaderComponent } from './shared-module/header/header.component';
+import { CoreModule } from './core-module/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarsModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule,
   ],
   providers: [CarsService],
   bootstrap: [AppComponent]
